@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Eternal Realms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Download.html">Download</a></li>
+                <li><a href="Fórum.html">Fórum</a></li>
+                <li><a href="Donate.html">Donate</a></li>
+                <li><a href="Store.html">Store</a></li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <span class="game-name">Eternal Realms</span>
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="login-container">
+            <a href="Login.html" class="login-button">Conectar-se</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <input type="checkbox" id="signup_toggle">
+            <form class="form">
+                <div class="form_front">
+                    <div class="form_details">Login</div>
+                    <input placeholder="Username" class="input" type="text" name="username" required>
+                    <input placeholder="Password" class="input" type="password" name="password" required>
+                    <button class="btn">Login</button>
+                    <span class="switch">Don't have an account? 
+                        <label class="signup_tog" for="signup_toggle">
+                            Sign Up
+                        </label>
+                    </span>
+                </div>
+                <div class="form_back">
+                    <div class="form_details">Sign Up</div>
+                    <input placeholder="Firstname" class="input" type="text" name="firstname" required>
+                    <input placeholder="Username" class="input" type="text" name="reg_username" required>
+                    <input placeholder="Password" class="input" type="password" name="reg_password" required>
+                    <input placeholder="Confirm Password" class="input" type="password" name="confirm_password" required>
+                    <button class="btn">Signup</button>
+                    <span class="switch">Already have an account? 
+                        <label class="signup_tog" for="signup_toggle">
+                            Sign In
+                        </label>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
